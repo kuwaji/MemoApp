@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".present.ItemDetailActivity">
+
+    <ImageView
+            android:id="@+id/itemIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:srcCompat="@tools:sample/avatars"/>
+
+    <TextView
+            android:id="@+id/itemName"
+            android:text="商品名"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:maxWidth="300dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintStart_toEndOf="@id/itemIcon"
+            app:layout_constraintTop_toTopOf="@id/itemIcon"
+    />
+
+    <TextView
+            android:id="@+id/inputDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@id/itemIcon"
+            app:layout_constraintBottom_toBottomOf="@id/itemIcon"
+            android:text="0000/00/00">
+    </TextView>
+
+    <ImageButton
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:elevation="1dp"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/counter_button"
+            android:src="@drawable/ic_add_black_24dp"
+            android:visibility="visible"
+            android:layout_marginStart="80dp"
+            app:layout_constraintStart_toEndOf="@id/removeButton"
+            app:layout_constraintTop_toTopOf="@id/removeButton"
+            app:layout_constraintBottom_toBottomOf="@id/removeButton"
+    />
+
+
+    <TextView
+            android:id="@+id/num"
+            android:text="個数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:maxWidth="72dp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1"
+            app:layout_constraintStart_toEndOf="@id/removeButton"
+            app:layout_constraintEnd_toStartOf="@id/addButton"
+            app:layout_constraintBottom_toBottomOf="@id/removeButton"
+    />
+
+    <ImageButton
+            android:id="@+id/removeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:elevation="1dp"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/counter_button"
+            android:src="@drawable/ic_remove_black_24dp"
+            android:visibility="visible"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/inputDate"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

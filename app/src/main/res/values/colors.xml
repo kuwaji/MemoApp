@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="button_color">#FF8F76</color>
+    <color name="button_highlight_color">#FF6767</color>
+
+    <color name="recyclerview_color">#ffff</color>
+    <color name="recyclerview_highlight_color">#aaaaaa</color>
+
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#00FF00</color>
+    <color name="yellow">#FFEB00</color>
+
+    <color name="primary">#FF8F76</color>
+    <color name="secondary">#44d1da</color>
+    <color name="secondary_ripple">#39B6D5</color>
+
+</resources>
